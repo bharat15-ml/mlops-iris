@@ -5,7 +5,7 @@ import pytest
 
 def test_model_training():
     # Load model
-    model = joblib.load('../models/iris_model.pkl')
+    model = joblib.load('models/iris_model.pkl')
 
     # Load data
     iris = load_iris()
@@ -19,7 +19,7 @@ def test_model_training():
     assert acc > 0.9, f"Model accuracy too low: {acc:.2f}"
 
 def test_model_output_shape():
-    model = joblib.load('../models/iris_model.pkl')
+    model = joblib.load('models/iris_model.pkl')
     iris = load_iris()
     X = iris.data
     y_pred = model.predict(X)

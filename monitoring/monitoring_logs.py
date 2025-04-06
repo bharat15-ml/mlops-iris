@@ -23,6 +23,6 @@ for i in range(50):
 
 # Save to CSV
 monitoring_df = pd.DataFrame(logs)
-monitoring_df.to_csv("monitoring_logs.csv", index=False)
+monitoring_df.to_csv("monitoring/monitoring_logs.csv", index=False)
 print("Monitoring logs saved to monitoring/monitoring_logs.csv")
 

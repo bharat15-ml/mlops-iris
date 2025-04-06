@@ -35,14 +35,14 @@ data_card = f"""
 """
 
 # Save data card to file
-with open("../iris_data_card.txt", "w", encoding="utf-8") as f:
+with open("iris_data_card.txt", "w", encoding="utf-8") as f:
     f.write(data_card)
 
 # Save visualization as image
 sns.set(style="ticks")
 pairplot_fig = sns.pairplot(df, hue='species')
 pairplot_fig.fig.suptitle("Iris Dataset Pairplot", y=1.02)
-pairplot_fig.savefig("../iris_pairplot.png", dpi=300, bbox_inches='tight')
+pairplot_fig.savefig("iris_pairplot.png", dpi=300, bbox_inches='tight')
 
 print("Data card saved to iris_data_card.txt")
 print("Pairplot saved to iris_pairplot.png")

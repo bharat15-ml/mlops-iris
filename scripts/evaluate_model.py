@@ -6,7 +6,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the saved model
-model = joblib.load('../models/iris_model.pkl')
+model = joblib.load('models/iris_model.pkl')
 
 # Load Iris dataset
 iris = load_iris()
